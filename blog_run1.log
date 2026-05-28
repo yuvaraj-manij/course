@@ -1,0 +1,50 @@
+[coord] fresh state at blog_state.json for topic: 'How does ReAct prompting differ from chain-of-thought?'
+
+[coord] stage = research
+    [researcher step 1] web_search({"query": "ReAct prompting vs chain-of-thought"})
+    [researcher step 2] read_url({"url": "https://www.promptingguide.ai/techniques/react"})
+    [researcher step 3] read_url({"url": "https://medium.com/@xiweizhou/chain-of-thought-vs-react-a-deep-dive-into-reasoning-paradigms-for-large-language)
+    [researcher step 4] read_url({"url": "https://godofprompt.ai/blog/combine-chain-of-thought-and-react-prompting/"})
+    [researcher step 5] submit_research({"claims": [{"text": "ReAct prompting combines reasoning and acting, allowing LLMs to interact with external tools and g)
+[coord] research saved: 3 claims, 3 URLs opened
+
+[coord] stage = draft
+    [drafter] tokens prompt=388 compl=757
+[coord] draft validation failed (attempt 1): draft.body has 451 words, need >=500
+    [drafter] tokens prompt=411 compl=855
+[coord] draft saved (attempt 2): 524 words, 3 citations
+
+[coord] stage = final
+    [editor] tokens prompt=909 compl=872
+[coord] final validation failed (attempt 1): editor removed citations from body: ['https://medium.com/@xiweizhou/chain-of-thought-vs-react-a-deep-dive-into-reasoning-paradigms-for-large-language-models-620f52e5e7e2']
+    [editor] tokens prompt=973 compl=839
+[coord] final saved (attempt 2): 524 words, 3 edits
+
+============================================================
+completed:          True
+wall_clock_s:       331.28
+prompt_tokens:      8992
+completion_tokens:  4029
+researcher_steps:   5
+claims:             3
+opened_urls:        3
+final word count:   524
+edits made:         3
+============================================================
+
+# How Does ReAct Prompting Differ from Chain-of-Thought?
+
+When it comes to enhancing the reasoning capabilities of large language models (LLMs), two prominent prompting techniques have emerged: ReAct prompting and chain-of-thought prompting. While both aim to improve the logical reasoning of AI systems, they differ significantly in their approach, functionality, and application. Understanding these differences is crucial for developers and researchers looking to leverage these techniques effectively in real-world scenarios.
+
+Chain-of-thought prompting is a method that encourages LLMs to generate internal reasoning steps before arriving at a final answer. This technique relies entirely on the model's internal knowledge and does not involve interaction with external tools or environments. By breaking down complex problems into smaller, logical steps, chain-of-thought prompting can improve the model's ability to solve reasoning tasks. However, this approach has limitations. Since the model operates in isolation, it may generate incorrect or hallucinated information, especially when dealing with complex or out-of-scope queries. This can lead to error propagation, where small mistakes in early reasoning steps compound into larger errors later on. A detailed discussion on these limitations can be found in an article on Medium, which highlights the risks of relying solely on internal reasoning without external validation [https://medium.com/@xiweizhou/chain-of-thought-vs-react-a-deep-dive-into-reasoning-paradigms-for-large-language-models-620f52e5e7e2].
+
+In contrast, ReAct prompting takes a more interactive and dynamic approach. It combines reasoning with action, allowing LLMs to not only think through a problem but also take actions such as querying external knowledge bases, databases, or even interacting with real-world environments. This makes ReAct particularly suitable for tasks that require up-to-date information or real-time data. For example, if an LLM is asked to provide the current weather in a specific city, it can use ReAct prompting to query a weather API and then incorporate that information into its response. This interaction with external tools helps reduce the risk of hallucination and increases the accuracy of the model's outputs. More information on how ReAct integrates reasoning and action can be found in a guide on prompting techniques [https://www.promptingguide.ai/techniques/react].
+
+Another key difference between ReAct and chain-of-thought prompting lies in their structure. ReAct operates in a loop of thinking, acting, observing, and repeating, which allows the model to adapt its reasoning based on new information. This iterative process is especially useful in complex or dynamic environments where the initial assumptions may change as new data becomes available. On the other hand, chain-of-thought prompting follows a linear, one-way process, where the model generates a sequence of internal thoughts without the possibility of revising or updating them based on external feedback. This lack of interactivity can be a significant drawback in scenarios that require real-time updates or external validation. A blog post on combining chain-of-thought and ReAct prompting further elaborates on the advantages of ReAct's interactive approach [https://godofprompt.ai/blog/combine-chain-of-thought-and-react-prompting/].
+
+In summary, while both ReAct and chain-of-thought prompting aim to enhance the reasoning abilities of LLMs, they do so in fundamentally different ways. Chain-of-thought relies on internal reasoning and can suffer from hallucination and error propagation, whereas ReAct integrates external tools and environments, making it more robust and suitable for real-world applications. As the field of AI continues to evolve, the choice between these two techniques will depend on the specific requirements of the task at hand.
+
+--- EDITS MADE ---
+- Clarified the claim about the limitations of chain-of-thought prompting by specifying that it may generate incorrect or hallucinated information, especially with complex or out-of-scope queries.
+- Tightened the prose by removing redundant phrasing and improving sentence flow.
+- Ensured that all URLs were preserved and not altered or removed.
