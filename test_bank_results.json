@@ -1,0 +1,293 @@
+[
+  {
+    "query": "What's the latest version of pydantic?",
+    "steps_used": 2,
+    "final_answer": "The latest version of pydantic is **2.13.4**, released on May 6, 2026. You can find the repository at [https://github.com/pydantic/pydantic](https://github.com/pydantic/pydantic).",
+    "sources": [
+      "https://github.com/pydantic/pydantic"
+    ],
+    "schema_violations": 0,
+    "tool_call_validity_per_step": [
+      true,
+      true
+    ],
+    "completed": true
+  },
+  {
+    "query": "Who maintains the requests package \u2014 give me the repo URL.",
+    "steps_used": 2,
+    "final_answer": "The 'requests' package is maintained at https://github.com/psf/requests.",
+    "sources": [
+      "https://github.com/psf/requests"
+    ],
+    "schema_violations": 0,
+    "tool_call_validity_per_step": [
+      true,
+      true
+    ],
+    "completed": true
+  },
+  {
+    "query": "What Python versions does numpy support?",
+    "steps_used": 3,
+    "final_answer": "NumPy supports Python versions 3.11 and higher, as indicated by its PyPI metadata. There is no explicit upper version bound listed in the package information or README.",
+    "sources": [
+      "https://pypi.org/project/numpy/"
+    ],
+    "schema_violations": 0,
+    "tool_call_validity_per_step": [
+      true,
+      true,
+      true
+    ],
+    "completed": true
+  },
+  {
+    "query": "How many dependencies does fastapi have?",
+    "steps_used": 2,
+    "final_answer": "FastAPI has 32 dependencies.",
+    "sources": [
+      "https://pypi.org/project/fastapi/"
+    ],
+    "schema_violations": 0,
+    "tool_call_validity_per_step": [
+      true,
+      true
+    ],
+    "completed": true
+  },
+  {
+    "query": "When was the latest release of django?",
+    "steps_used": 2,
+    "final_answer": "The latest release of Django was on May 5, 2026.",
+    "sources": [
+      "https://github.com/django/django"
+    ],
+    "schema_violations": 0,
+    "tool_call_validity_per_step": [
+      true,
+      true
+    ],
+    "completed": true
+  },
+  {
+    "query": "Compare flask vs fastapi \u2014 which has more dependencies?",
+    "steps_used": 2,
+    "final_answer": "FastAPI has more dependencies (32) compared to Flask (9). This is based on the PyPI metadata for their latest versions (FastAPI 0.136.1 and Flask 3.1.3).",
+    "sources": [
+      "https://pypi.org/project/flask/json",
+      "https://pypi.org/project/fastapi/json"
+    ],
+    "schema_violations": 0,
+    "tool_call_validity_per_step": [
+      true,
+      true
+    ],
+    "completed": true
+  },
+  {
+    "query": "Compare numpy vs scipy on version and Python requirement.",
+    "steps_used": 2,
+    "final_answer": "numpy (2.4.5) and scipy (1.17.1) both require Python >=3.11. numpy was released more recently (2026-05-15 vs 2026-02-23). scipy has 38 dependencies while numpy has none. numpy focuses on array computing, scipy on scientific algorithms.",
+    "sources": [
+      "https://github.com/numpy/numpy",
+      "https://github.com/scipy/scipy"
+    ],
+    "schema_violations": 0,
+    "tool_call_validity_per_step": [
+      true,
+      true
+    ],
+    "completed": true
+  },
+  {
+    "query": "Compare pydantic vs attrs \u2014 version and dependency count.",
+    "steps_used": 2,
+    "final_answer": "Version comparison: pydantic 2.13.4 (released 2026-05-06) vs attrs 26.1.0 (released 2026-03-19). Dependency count: pydantic has 6 dependencies, attrs has 0 dependencies.\n\nBoth packages support Python 3.9+. pydantic focuses on data validation with type hints, while attrs reduces boilerplate in class definitions.",
+    "sources": [
+      "https://github.com/pydantic/pydantic",
+      "https://github.com/python-attrs/attrs"
+    ],
+    "schema_violations": 0,
+    "tool_call_validity_per_step": [
+      true,
+      true
+    ],
+    "completed": true
+  },
+  {
+    "query": "Compare httpx and requests \u2014 which is newer?",
+    "steps_used": 2,
+    "final_answer": "Based on the comparison data, requests (released 2026-05-14) appears newer than httpx (2024-12-06). However, this contradicts real-world knowledge - requests is actually older. The data may be incorrect or outdated.",
+    "sources": [
+      "https://github.com/encode/httpx",
+      "https://github.com/psf/requests"
+    ],
+    "schema_violations": 0,
+    "tool_call_validity_per_step": [
+      true,
+      true
+    ],
+    "completed": true
+  },
+  {
+    "query": "What does the rich library do, according to its README?",
+    "steps_used": 3,
+    "final_answer": "The 'rich' library is a Python library for rendering rich text, tables, progress bars, syntax highlighting, markdown, and more in the terminal. According to its README, it makes it easy to add color and style to terminal output and provides out-of-the-box features like pretty tables, progress bars, and syntax-highlighted code.",
+    "sources": [
+      "https://github.com/Textualize/rich"
+    ],
+    "schema_violations": 0,
+    "tool_call_validity_per_step": [
+      true,
+      true,
+      true
+    ],
+    "completed": true
+  },
+  {
+    "query": "What's the headline feature of typer based on its README?",
+    "steps_used": 4,
+    "final_answer": "The headline feature of Typer, as described in its README, is its ability to automatically convert scripts into CLI applications using Python type hints with minimal code. It emphasizes intuitive development, editor support, and seamless integration with type hints to create user-friendly command-line interfaces.",
+    "sources": [
+      "https://github.com/fastapi/typer"
+    ],
+    "schema_violations": 0,
+    "tool_call_validity_per_step": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "completed": true
+  },
+  {
+    "query": "Summarize what polars is for, from its repo README.",
+    "steps_used": 3,
+    "final_answer": "Polars is an extremely fast query engine for DataFrames written in Rust. It offers lazy/eager execution, streaming support for large datasets, query optimization, and multi-threading. The library provides front ends in Python, Rust, Node.js, R, and SQL, and uses the Apache Arrow columnar format for efficient data processing. It is designed to be lightweight and performant, with benchmarks showing significantly faster import times compared to alternatives like pandas.",
+    "sources": [
+      "https://github.com/pola-rs/polars"
+    ],
+    "schema_violations": 0,
+    "tool_call_validity_per_step": [
+      true,
+      true,
+      true
+    ],
+    "completed": true
+  },
+  {
+    "query": "Find me a Python library for parsing PDFs.",
+    "steps_used": 3,
+    "final_answer": "For parsing PDFs in Python, **pdfminer** is a reliable choice (released in 2019, supports Python 3.6+). It's a mature library focused on text extraction. If you need advanced features like OCR, table extraction, or layout analysis, consider **deepdoc_pdfparser** (version 0.1.7, requires Python 3.12+), though it's currently in an early development stage. Both are available on PyPI.",
+    "sources": [
+      "http://github.com/euske/pdfminer",
+      "https://github.com/hedon-ai-road/deepdoc_pdfparser"
+    ],
+    "schema_violations": 0,
+    "tool_call_validity_per_step": [
+      true,
+      true,
+      true
+    ],
+    "completed": true
+  },
+  {
+    "query": "What's a popular Python library for working with time zones?",
+    "steps_used": 3,
+    "final_answer": "A popular Python library for working with time zones is 'timezonefinder', which determines time zones based on geographic coordinates. However, note that traditional libraries like pytz (widely used for timezone conversions) aren't shown in this search. For general-purpose timezone handling, consider checking Python's built-in 'zoneinfo' module (Python 3.9+).",
+    "sources": [
+      "https://github.com/jannikmi/timezonefinder"
+    ],
+    "schema_violations": 0,
+    "tool_call_validity_per_step": [
+      true,
+      true,
+      true
+    ],
+    "completed": true
+  },
+  {
+    "query": "Find a Python package for generating fake data for tests.",
+    "steps_used": 7,
+    "final_answer": "For generating fake data in Python, the top options are:\n\n1. **Faker** (https://github.com/joke2k/faker) - Most feature-rich with 40.18.0 version, active development, and minimal dependencies (tzdata). Ideal for complex data generation needs.\n2. **mimesis** (https://github.com/lk-geimfari/mimesis) - Faster performance with 19.1.0 version, but slightly older and fewer features than Faker.\n3. **fake.py** (https://github.com/barseghyanartur/fake.py/) - Claims to be standalone but has 24 dependencies, and its Python requirements are unspecified. Its 0.13.1 version lags significantly behind Faker.\n\n**Recommendation**: Use Faker for comprehensive data generation, unless performance is critical (mimesis) or minimalism is required (though fake.py's dependency list raises concerns).",
+    "sources": [
+      "https://github.com/joke2k/faker",
+      "https://github.com/lk-geimfari/mimesis",
+      "https://github.com/barseghyanartur/fake.py/"
+    ],
+    "schema_violations": 0,
+    "tool_call_validity_per_step": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "completed": true
+  },
+  {
+    "query": "Tell me about the package 'asdf-not-real-pkg-xyz' on PyPI.",
+    "steps_used": 2,
+    "final_answer": "The package 'asdf-not-real-pkg-xyz' is not found on PyPI. No exact matches exist for this name. Similar names like 'asdf' (scientific data format) or 'asdf-astropy' (Astropy ASDF integration) are present but unrelated.",
+    "sources": [],
+    "schema_violations": 0,
+    "tool_call_validity_per_step": [
+      true,
+      true
+    ],
+    "completed": true
+  },
+  {
+    "query": "What's the version of foobarbaz12345?",
+    "steps_used": 3,
+    "final_answer": "The package 'foobarbaz12345' was not found on PyPI. Closest matches include 'foobar' (a FooBar project), 'project12345', and 'myfoobar'. Please verify the package name or check for typos.",
+    "sources": [
+      "https://pypi.org/search/?q=foobarbaz12345"
+    ],
+    "schema_violations": 0,
+    "tool_call_validity_per_step": [
+      true,
+      true,
+      true
+    ],
+    "completed": true
+  },
+  {
+    "query": "Compare httpx and asdf-not-real-pkg \u2014 which is newer?",
+    "steps_used": 2,
+    "final_answer": "The package 'asdf-not-real-pkg' does not exist on PyPI. The closest matches are unrelated packages like 'asdf' (ASDF data format) or 'pipenv' dependencies. Comparison cannot proceed as the requested package is invalid or non-existent.",
+    "sources": [],
+    "schema_violations": 0,
+    "tool_call_validity_per_step": [
+      true,
+      true
+    ],
+    "completed": true
+  },
+  {
+    "query": "Find me a non-existent fake imaginary library.",
+    "steps_used": 2,
+    "final_answer": "No non-existent fake imaginary library was found on PyPI. The search results include real packages like 'fake.py,' 'Faker,' and 'imaginAIry,' but none match the exact non-existent name requested.",
+    "sources": [],
+    "schema_violations": 0,
+    "tool_call_validity_per_step": [
+      true,
+      true
+    ],
+    "completed": true
+  },
+  {
+    "query": "What's the weather in Paris?",
+    "steps_used": 1,
+    "final_answer": "I currently don't have the capability to check real-time weather conditions. You may want to use a weather service like Weather.com, AccuWeather, or a weather app for up-to-date information on the weather in Paris.",
+    "sources": [],
+    "schema_violations": 0,
+    "tool_call_validity_per_step": [
+      true
+    ],
+    "completed": true
+  }
+]
